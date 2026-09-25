@@ -12,7 +12,7 @@ npm run dev     # gera e fica observando mudanças
 
 Depois abra o `index.html` no navegador.
 
-**Link do projeto:** _(cole aqui o link do GitHub Pages ou do repositório)_
+**Link do projeto:** https://aula-7-frame-works.vercel.app/
 
 ## Prints
 
