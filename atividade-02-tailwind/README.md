@@ -1,6 +1,16 @@
 # Atividade 02 - Tailwind CSS
 
-Landing page fictícia de uma cafeteria (**Grão & Cia**) feita com Tailwind CSS (via CDN). O projeto usa mais de 100 classes diferentes, bem acima das 30 pedidas.
+Landing page fictícia de uma cafeteria (**Grão & Cia**) feita com Tailwind CSS v4 (instalado via NPM). O projeto usa mais de 100 classes diferentes, bem acima das 30 pedidas.
+
+## Como rodar
+
+```bash
+npm install
+npm run build   # gera dist/output.css
+npm run dev     # gera e fica observando mudanças
+```
+
+Depois abra o `index.html` no navegador.
 
 **Link do projeto:** _(cole aqui o link do GitHub Pages ou do repositório)_
 
