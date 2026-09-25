@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grão &amp; Cia - Atividade 02 Tailwind</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen bg-stone-50 text-stone-800 font-sans">
+
+    <header class="sticky top-0 z-50 bg-amber-950 text-amber-50 shadow-lg">
+        <nav class="flex items-center justify-between max-w-6xl mx-auto px-6 py-4">
+            <span class="text-2xl font-bold tracking-wide">☕ Grão &amp; Cia</span>
+            <ul class="hidden md:flex gap-8 text-sm">
+                <li><a href="#inicio" class="hover:text-amber-300 transition">Início</a></li>
+                <li><a href="#diferenciais" class="hover:text-amber-300 transition">Diferenciais</a></li>
+                <li><a href="#cardapio" class="hover:text-amber-300 transition">Cardápio</a></li>
+            </ul>
+            <a href="#contato" class="bg-amber-500 hover:bg-amber-400 text-amber-950 font-semibold px-4 py-2 rounded-full transition">Reservar</a>
+        </nav>
+    </header>
+
+    <section id="inicio" class="bg-gradient-to-br from-amber-900 via-amber-800 to-orange-700 text-white">
+        <div class="grid md:grid-cols-2 gap-10 items-center max-w-6xl mx-auto px-6 py-24">
+            <div>
+                <span class="inline-block bg-amber-500/20 text-amber-300 text-xs uppercase tracking-widest px-3 py-1 rounded-full mb-4">Cafeteria artesanal</span>
+                <h1 class="text-4xl md:text-6xl font-extrabold leading-tight">O café que <span class="text-amber-300">acorda</span> o seu dia</h1>
+                <p class="mt-6 text-lg text-amber-100">Grãos selecionados, torra fresca e um cantinho aconchegante para você trabalhar, estudar ou só relaxar.</p>
+                <div class="flex flex-col sm:flex-row gap-4 mt-8">
+                    <a href="#cardapio" class="bg-white text-amber-900 font-semibold px-6 py-3 rounded-lg text-center hover:bg-amber-100 transition">Ver cardápio</a>
+                    <a href="#contato" class="border-2 border-white px-6 py-3 rounded-lg text-center hover:bg-white/10 transition">Fale conosco</a>
+                </div>
+            </div>
+            <div class="relative flex justify-center">
+                <div class="w-64 h-64 md:w-80 md:h-80 rounded-full bg-amber-500/30 flex items-center justify-center text-8xl shadow-2xl">☕</div>
+                <span class="absolute top-0 right-4 bg-white text-amber-900 text-sm font-bold px-4 py-2 rounded-xl shadow-lg rotate-6">⭐ 4,9 / 5</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="diferenciais" class="max-w-6xl mx-auto px-6 py-20">
+        <h2 class="text-3xl font-bold text-center text-amber-950">Por que escolher a gente?</h2>
+        <p class="text-center text-stone-500 mt-2 mb-12">Três motivos para voltar sempre.</p>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-8">
+            <div class="text-center bg-white rounded-2xl p-8 shadow-md hover:shadow-xl hover:-translate-y-1 transition">
+                <div class="text-5xl mb-4">🌱</div>
+                <h3 class="text-xl font-semibold">Grãos selecionados</h3>
+                <p class="mt-2 text-sm text-stone-500">Direto de pequenos produtores, com torra feita toda semana.</p>
+            </div>
+            <div class="text-center bg-white rounded-2xl p-8 shadow-md hover:shadow-xl hover:-translate-y-1 transition">
+                <div class="text-5xl mb-4">⚡</div>
+                <h3 class="text-xl font-semibold">Wi-Fi rápido</h3>
+                <p class="mt-2 text-sm text-stone-500">Tomadas em todas as mesas para você ficar o tempo que quiser.</p>
+            </div>
+            <div class="text-center bg-white rounded-2xl p-8 shadow-md hover:shadow-xl hover:-translate-y-1 transition">
+                <div class="text-5xl mb-4">🥐</div>
+                <h3 class="text-xl font-semibold">Padaria própria</h3>
+                <p class="mt-2 text-sm text-stone-500">Pães e doces feitos na hora, saindo quentinhos do forno.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="cardapio" class="bg-amber-100 py-20">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-amber-950">Nosso cardápio</h2>
+            <p class="text-center text-stone-500 mt-2 mb-12">Os favoritos da casa.</p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <article class="bg-white rounded-2xl overflow-hidden shadow border border-amber-200">
+                    <div class="h-32 bg-amber-200 flex items-center justify-center text-6xl">☕</div>
+                    <div class="p-5">
+                        <div class="flex justify-between items-center">
+                            <h3 class="font-semibold">Espresso</h3>
+                            <span class="text-amber-700 font-bold">R$ 6</span>
+                        </div>
+                        <p class="mt-2 text-sm text-stone-500">Curto, intenso e encorpado.</p>
+                    </div>
+                </article>
+                <article class="bg-white rounded-2xl overflow-hidden shadow border border-amber-200">
+                    <div class="h-32 bg-amber-200 flex items-center justify-center text-6xl">🥛</div>
+                    <div class="p-5">
+                        <div class="flex justify-between items-center">
+                            <h3 class="font-semibold">Cappuccino</h3>
+                            <span class="text-amber-700 font-bold">R$ 12</span>
+                        </div>
+                        <p class="mt-2 text-sm text-stone-500">Espresso com leite vaporizado e espuma.</p>
+                    </div>
+                </article>
+                <article class="bg-white rounded-2xl overflow-hidden shadow border border-amber-200">
+                    <div class="h-32 bg-amber-200 flex items-center justify-center text-6xl">🧊</div>
+                    <div class="p-5">
+                        <div class="flex justify-between items-center">
+                            <h3 class="font-semibold">Cold Brew</h3>
+                            <span class="text-amber-700 font-bold">R$ 14</span>
+                        </div>
+                        <p class="mt-2 text-sm text-stone-500">Extraído a frio por 18 horas.</p>
+                    </div>
+                </article>
+                <article class="bg-white rounded-2xl overflow-hidden shadow border border-amber-200">
+                    <div class="h-32 bg-amber-200 flex items-center justify-center text-6xl">🥐</div>
+                    <div class="p-5">
+                        <div class="flex justify-between items-center">
+                            <h3 class="font-semibold">Croissant</h3>
+                            <span class="text-amber-700 font-bold">R$ 9</span>
+                        </div>
+                        <p class="mt-2 text-sm text-stone-500">Folhado, amanteigado e crocante.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="bg-amber-950 text-white text-center py-16 px-6">
+        <h2 class="text-3xl font-bold">Bora tomar um café?</h2>
+        <p class="mt-3 text-amber-200">Reserve sua mesa e ganhe um espresso na primeira visita.</p>
+        <a href="#inicio" class="inline-block mt-8 bg-amber-500 hover:bg-amber-400 text-amber-950 font-bold px-8 py-3 rounded-full transition">Reservar mesa</a>
+    </section>
+
+    <footer class="bg-stone-900 text-stone-400 text-sm text-center py-6">
+        © 2026 Grão &amp; Cia - Projeto fictício da Atividade 02 (Tailwind CSS)
+    </footer>
+
+</body>
+</html>
